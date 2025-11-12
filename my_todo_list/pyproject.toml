@@ -1,0 +1,16 @@
+[project]
+name = "todo"
+version = "0.1.0"
+description = "A simple command-line todo list manager"
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = ["todolist", "cli", "task-manager"]
+authors = [
+    {name = "Davide Ariotto", email = "s302489@studenti.polito.it"}
+]
+
+[project.scripts]
+todolist = "todo.main:main"
+
+[project.urls]
+Repository = "https://github.com/davideariotto/my_cli_todolist.git"
