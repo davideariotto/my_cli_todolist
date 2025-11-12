@@ -1,30 +1,73 @@
-# my_cli_todolist
-Simple CLI todolist tool 
+# 📝 my_cli_todolist
 
-## To install
+A lightweight command-line todo list manager for organizing and tracking your tasks efficiently.
+
+---
+
+## 📦 Installation
+
+1. Navigate to the project directory:
+```bash
 cd my_todo_list
-pipx uninstall todo (OPTIONAL)
+```
+
+2. (Optional) Uninstall any previous version:
+```bash
+pipx uninstall todo
+```
+
+3. Install the package:
+```bash
 pipx install .
+```
 
-## How to use it:
+---
 
-### Adding a new task
+## 🚀 Usage
+
+### ➕ Adding a new task
+```bash
 todolist add "Buy groceries"
+```
+**Output:** `Task added successfully (ID: 1)`
 
--- Output: Task added successfully (ID: 1)
-
-### Updating and deleting tasks
+### ✏️ Updating a task
+```bash
 todolist update 1 "Buy groceries and cook dinner"
+```
+
+### 🗑️ Deleting a task
+```bash
 todolist delete 1
+```
 
-### Marking a task as in progress or done
+### 🔄 Marking task status
+Mark a task as in progress:
+```bash
 todolist mark-in-progress 1
-todolist mark-done 
+```
 
-### Listing all tasks
+Mark a task as done:
+```bash
+todolist mark-done 1
+```
+
+### 📋 Listing tasks
+
+List all tasks:
+```bash
 todolist list
+```
 
-### Listing tasks by status
-todolist list done
-todolist list todo
-todolist list in-progress
+Filter tasks by status:
+```bash
+todolist list done           # Show completed tasks
+todolist list todo           # Show pending tasks
+todolist list in-progress    # Show in-progress tasks
+```
+
+---
+
+## 📄 License
+
+Created by Davide Ariotto
